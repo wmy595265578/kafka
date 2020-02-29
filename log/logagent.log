@@ -1,0 +1,326 @@
+2020/02/24 13:59:42.037 [D]  initialize successful
+2020/02/24 13:59:42.037 [D]  load conf successful:&{debug ./log/logagent.log [{./my.log mylog}]},
+2020/02/29 13:39:21.533 [D]  initialize successful
+2020/02/29 13:39:21.533 [D]  load conf successful:&{debug ./log/logagent.log 100 [{./my.log mylog}]},
+2020/02/29 13:39:21.533 [D]  initialize  all successful
+2020/02/29 14:09:41.662 [D]  initialize successful
+2020/02/29 14:09:41.662 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/02/29 14:09:41.662 [D]  initialize  all successful
+2020/02/29 14:09:41.687 [D]  init kafka successful
+2020/02/29 14:09:41.687 [D]  initialize  all successful
+2020/02/29 14:11:38.566 [D]  initialize successful
+2020/02/29 14:11:38.566 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/02/29 14:11:38.566 [D]  initialize  all successful
+2020/02/29 14:11:38.570 [D]  init kafka successful
+2020/02/29 14:11:38.570 [D]  initialize  all successful
+2020/02/29 14:13:46.756 [E]  send message failed,err:dial tcp 192.168.1.3:9092: i/o timeout, data:qeqweqe,topic:mykafka
+2020/02/29 14:16:14.468 [D]  initialize successful
+2020/02/29 14:16:14.468 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/02/29 14:16:14.468 [D]  initialize  all successful
+2020/02/29 14:16:15.255 [D]  init kafka successful
+2020/02/29 14:16:15.255 [D]  initialize  all successful
+2020/02/29 14:21:38.687 [D]  initialize successful
+2020/02/29 14:21:38.687 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/02/29 14:21:38.687 [D]  initialize  all successful
+2020/02/29 14:21:38.698 [D]  init kafka successful
+2020/02/29 14:21:38.698 [D]  initialize  all successful
+2020/02/29 14:21:52.953 [D]  send successful ,pid:0  offset:%!s(int64=0) ,topic:mykafka
+
+2020/02/29 14:22:50.721 [D]  send successful ,pid:0  offset:%!s(int64=1) ,topic:mykafka
+
+2020/02/29 14:22:54.265 [D]  send successful ,pid:0  offset:%!s(int64=2) ,topic:mykafka
+
+2020/02/29 14:23:24.142 [D]  send successful ,pid:0  offset:%!s(int64=3) ,topic:mykafka
+
+2020/02/29 14:23:24.147 [D]  send successful ,pid:0  offset:%!s(int64=4) ,topic:mykafka
+
+2020/02/29 14:23:24.159 [D]  send successful ,pid:0  offset:%!s(int64=5) ,topic:mykafka
+
+2020/02/29 14:23:24.170 [D]  send successful ,pid:0  offset:%!s(int64=6) ,topic:mykafka
+
+2020/02/29 14:23:24.180 [D]  send successful ,pid:0  offset:%!s(int64=7) ,topic:mykafka
+
+2020/02/29 14:23:24.183 [D]  send successful ,pid:0  offset:%!s(int64=8) ,topic:mykafka
+
+2020/02/29 14:23:24.195 [D]  send successful ,pid:0  offset:%!s(int64=9) ,topic:mykafka
+
+2020/02/29 14:23:24.198 [D]  send successful ,pid:0  offset:%!s(int64=10) ,topic:mykafka
+
+2020/02/29 14:23:24.202 [D]  send successful ,pid:0  offset:%!s(int64=11) ,topic:mykafka
+
+2020/02/29 14:23:24.208 [D]  send successful ,pid:0  offset:%!s(int64=12) ,topic:mykafka
+
+2020/02/29 14:23:24.212 [D]  send successful ,pid:0  offset:%!s(int64=13) ,topic:mykafka
+
+2020/02/29 14:23:24.216 [D]  send successful ,pid:0  offset:%!s(int64=14) ,topic:mykafka
+
+2020/02/29 14:23:24.227 [D]  send successful ,pid:0  offset:%!s(int64=15) ,topic:mykafka
+
+2020/02/29 14:23:24.235 [D]  send successful ,pid:0  offset:%!s(int64=16) ,topic:mykafka
+
+2020/02/29 14:23:24.239 [D]  send successful ,pid:0  offset:%!s(int64=17) ,topic:mykafka
+
+2020/02/29 14:23:24.244 [D]  send successful ,pid:0  offset:%!s(int64=18) ,topic:mykafka
+
+2020/02/29 14:23:24.247 [D]  send successful ,pid:0  offset:%!s(int64=19) ,topic:mykafka
+
+2020/02/29 14:23:24.250 [D]  send successful ,pid:0  offset:%!s(int64=20) ,topic:mykafka
+
+2020/02/29 14:23:24.253 [D]  send successful ,pid:0  offset:%!s(int64=21) ,topic:mykafka
+
+2020/02/29 14:23:24.270 [D]  send successful ,pid:0  offset:%!s(int64=22) ,topic:mykafka
+
+2020/02/29 14:23:24.273 [D]  send successful ,pid:0  offset:%!s(int64=23) ,topic:mykafka
+
+2020/02/29 14:23:24.277 [D]  send successful ,pid:0  offset:%!s(int64=24) ,topic:mykafka
+
+2020/02/29 14:23:24.280 [D]  send successful ,pid:0  offset:%!s(int64=25) ,topic:mykafka
+
+2020/02/29 14:23:24.283 [D]  send successful ,pid:0  offset:%!s(int64=26) ,topic:mykafka
+
+2020/02/29 14:23:24.289 [D]  send successful ,pid:0  offset:%!s(int64=27) ,topic:mykafka
+
+2020/02/29 14:23:24.296 [D]  send successful ,pid:0  offset:%!s(int64=28) ,topic:mykafka
+
+2020/02/29 14:23:24.299 [D]  send successful ,pid:0  offset:%!s(int64=29) ,topic:mykafka
+
+2020/02/29 14:23:24.302 [D]  send successful ,pid:0  offset:%!s(int64=30) ,topic:mykafka
+
+2020/02/29 14:23:24.312 [D]  send successful ,pid:0  offset:%!s(int64=31) ,topic:mykafka
+
+2020/02/29 14:23:24.316 [D]  send successful ,pid:0  offset:%!s(int64=32) ,topic:mykafka
+
+2020/02/29 14:23:24.321 [D]  send successful ,pid:0  offset:%!s(int64=33) ,topic:mykafka
+
+2020/02/29 14:23:24.327 [D]  send successful ,pid:0  offset:%!s(int64=34) ,topic:mykafka
+
+2020/02/29 14:23:24.330 [D]  send successful ,pid:0  offset:%!s(int64=35) ,topic:mykafka
+
+2020/02/29 14:23:24.336 [D]  send successful ,pid:0  offset:%!s(int64=36) ,topic:mykafka
+
+2020/02/29 14:23:24.339 [D]  send successful ,pid:0  offset:%!s(int64=37) ,topic:mykafka
+
+2020/02/29 14:23:24.362 [D]  send successful ,pid:0  offset:%!s(int64=38) ,topic:mykafka
+
+2020/02/29 14:23:24.372 [D]  send successful ,pid:0  offset:%!s(int64=39) ,topic:mykafka
+
+2020/02/29 14:23:24.376 [D]  send successful ,pid:0  offset:%!s(int64=40) ,topic:mykafka
+
+2020/02/29 14:23:24.379 [D]  send successful ,pid:0  offset:%!s(int64=41) ,topic:mykafka
+
+2020/02/29 14:23:24.384 [D]  send successful ,pid:0  offset:%!s(int64=42) ,topic:mykafka
+
+2020/02/29 14:23:24.388 [D]  send successful ,pid:0  offset:%!s(int64=43) ,topic:mykafka
+
+2020/02/29 14:23:24.393 [D]  send successful ,pid:0  offset:%!s(int64=44) ,topic:mykafka
+
+2020/02/29 14:23:24.396 [D]  send successful ,pid:0  offset:%!s(int64=45) ,topic:mykafka
+
+2020/02/29 14:23:24.402 [D]  send successful ,pid:0  offset:%!s(int64=46) ,topic:mykafka
+
+2020/02/29 14:23:24.407 [D]  send successful ,pid:0  offset:%!s(int64=47) ,topic:mykafka
+
+2020/02/29 14:23:24.412 [D]  send successful ,pid:0  offset:%!s(int64=48) ,topic:mykafka
+
+2020/02/29 14:23:24.419 [D]  send successful ,pid:0  offset:%!s(int64=49) ,topic:mykafka
+
+2020/02/29 14:23:24.428 [D]  send successful ,pid:0  offset:%!s(int64=50) ,topic:mykafka
+
+2020/02/29 14:23:24.433 [D]  send successful ,pid:0  offset:%!s(int64=51) ,topic:mykafka
+
+2020/02/29 14:23:24.440 [D]  send successful ,pid:0  offset:%!s(int64=52) ,topic:mykafka
+
+2020/02/29 14:23:24.446 [D]  send successful ,pid:0  offset:%!s(int64=53) ,topic:mykafka
+
+2020/02/29 14:23:24.453 [D]  send successful ,pid:0  offset:%!s(int64=54) ,topic:mykafka
+
+2020/02/29 14:23:24.464 [D]  send successful ,pid:0  offset:%!s(int64=55) ,topic:mykafka
+
+2020/02/29 14:23:24.476 [D]  send successful ,pid:0  offset:%!s(int64=56) ,topic:mykafka
+
+2020/02/29 14:23:24.481 [D]  send successful ,pid:0  offset:%!s(int64=57) ,topic:mykafka
+
+2020/02/29 14:23:24.487 [D]  send successful ,pid:0  offset:%!s(int64=58) ,topic:mykafka
+
+2020/02/29 14:23:24.495 [D]  send successful ,pid:0  offset:%!s(int64=59) ,topic:mykafka
+
+2020/02/29 14:23:24.503 [D]  send successful ,pid:0  offset:%!s(int64=60) ,topic:mykafka
+
+2020/02/29 14:23:24.511 [D]  send successful ,pid:0  offset:%!s(int64=61) ,topic:mykafka
+
+2020/02/29 14:23:24.519 [D]  send successful ,pid:0  offset:%!s(int64=62) ,topic:mykafka
+
+2020/02/29 14:23:24.525 [D]  send successful ,pid:0  offset:%!s(int64=63) ,topic:mykafka
+
+2020/02/29 14:23:24.529 [D]  send successful ,pid:0  offset:%!s(int64=64) ,topic:mykafka
+
+2020/02/29 14:23:24.533 [D]  send successful ,pid:0  offset:%!s(int64=65) ,topic:mykafka
+
+2020/02/29 14:23:24.537 [D]  send successful ,pid:0  offset:%!s(int64=66) ,topic:mykafka
+
+2020/02/29 14:23:24.545 [D]  send successful ,pid:0  offset:%!s(int64=67) ,topic:mykafka
+
+2020/02/29 14:23:24.550 [D]  send successful ,pid:0  offset:%!s(int64=68) ,topic:mykafka
+
+2020/02/29 14:23:24.556 [D]  send successful ,pid:0  offset:%!s(int64=69) ,topic:mykafka
+
+2020/02/29 14:23:24.559 [D]  send successful ,pid:0  offset:%!s(int64=70) ,topic:mykafka
+
+2020/02/29 14:23:24.564 [D]  send successful ,pid:0  offset:%!s(int64=71) ,topic:mykafka
+
+2020/02/29 14:23:24.567 [D]  send successful ,pid:0  offset:%!s(int64=72) ,topic:mykafka
+
+2020/02/29 14:23:24.572 [D]  send successful ,pid:0  offset:%!s(int64=73) ,topic:mykafka
+
+2020/02/29 14:23:24.575 [D]  send successful ,pid:0  offset:%!s(int64=74) ,topic:mykafka
+
+2020/02/29 14:23:24.580 [D]  send successful ,pid:0  offset:%!s(int64=75) ,topic:mykafka
+
+2020/02/29 14:23:24.585 [D]  send successful ,pid:0  offset:%!s(int64=76) ,topic:mykafka
+
+2020/02/29 14:23:24.591 [D]  send successful ,pid:0  offset:%!s(int64=77) ,topic:mykafka
+
+2020/02/29 14:23:24.595 [D]  send successful ,pid:0  offset:%!s(int64=78) ,topic:mykafka
+
+2020/02/29 14:23:24.599 [D]  send successful ,pid:0  offset:%!s(int64=79) ,topic:mykafka
+
+2020/02/29 14:23:24.604 [D]  send successful ,pid:0  offset:%!s(int64=80) ,topic:mykafka
+
+2020/02/29 14:23:24.607 [D]  send successful ,pid:0  offset:%!s(int64=81) ,topic:mykafka
+
+2020/02/29 14:23:24.613 [D]  send successful ,pid:0  offset:%!s(int64=82) ,topic:mykafka
+
+2020/02/29 14:23:24.620 [D]  send successful ,pid:0  offset:%!s(int64=83) ,topic:mykafka
+
+2020/02/29 14:23:24.625 [D]  send successful ,pid:0  offset:%!s(int64=84) ,topic:mykafka
+
+2020/02/29 14:23:24.629 [D]  send successful ,pid:0  offset:%!s(int64=85) ,topic:mykafka
+
+2020/02/29 14:23:24.632 [D]  send successful ,pid:0  offset:%!s(int64=86) ,topic:mykafka
+
+2020/02/29 14:23:24.642 [D]  send successful ,pid:0  offset:%!s(int64=87) ,topic:mykafka
+
+2020/02/29 14:23:24.645 [D]  send successful ,pid:0  offset:%!s(int64=88) ,topic:mykafka
+
+2020/02/29 14:23:24.649 [D]  send successful ,pid:0  offset:%!s(int64=89) ,topic:mykafka
+
+2020/02/29 14:23:24.652 [D]  send successful ,pid:0  offset:%!s(int64=90) ,topic:mykafka
+
+2020/02/29 14:23:24.656 [D]  send successful ,pid:0  offset:%!s(int64=91) ,topic:mykafka
+
+2020/02/29 14:23:24.662 [D]  send successful ,pid:0  offset:%!s(int64=92) ,topic:mykafka
+
+2020/02/29 14:23:24.665 [D]  send successful ,pid:0  offset:%!s(int64=93) ,topic:mykafka
+
+2020/02/29 14:23:24.670 [D]  send successful ,pid:0  offset:%!s(int64=94) ,topic:mykafka
+
+2020/02/29 14:23:24.674 [D]  send successful ,pid:0  offset:%!s(int64=95) ,topic:mykafka
+
+2020/02/29 14:23:24.681 [D]  send successful ,pid:0  offset:%!s(int64=96) ,topic:mykafka
+
+2020/02/29 14:23:24.688 [D]  send successful ,pid:0  offset:%!s(int64=97) ,topic:mykafka
+
+2020/02/29 14:23:24.694 [D]  send successful ,pid:0  offset:%!s(int64=98) ,topic:mykafka
+
+2020/02/29 14:23:24.700 [D]  send successful ,pid:0  offset:%!s(int64=99) ,topic:mykafka
+
+2020/02/29 14:23:24.706 [D]  send successful ,pid:0  offset:%!s(int64=100) ,topic:mykafka
+
+2020/02/29 14:23:24.711 [D]  send successful ,pid:0  offset:%!s(int64=101) ,topic:mykafka
+
+2020/02/29 14:23:24.716 [D]  send successful ,pid:0  offset:%!s(int64=102) ,topic:mykafka
+
+2020/02/29 14:23:24.727 [D]  send successful ,pid:0  offset:%!s(int64=103) ,topic:mykafka
+
+2020/02/29 14:23:24.737 [D]  send successful ,pid:0  offset:%!s(int64=104) ,topic:mykafka
+
+2020/02/29 14:23:24.749 [D]  send successful ,pid:0  offset:%!s(int64=105) ,topic:mykafka
+
+2020/02/29 14:23:24.754 [D]  send successful ,pid:0  offset:%!s(int64=106) ,topic:mykafka
+
+2020/02/29 14:23:24.758 [D]  send successful ,pid:0  offset:%!s(int64=107) ,topic:mykafka
+
+2020/02/29 14:23:24.769 [D]  send successful ,pid:0  offset:%!s(int64=108) ,topic:mykafka
+
+2020/02/29 14:23:24.772 [D]  send successful ,pid:0  offset:%!s(int64=109) ,topic:mykafka
+
+2020/02/29 14:23:24.785 [D]  send successful ,pid:0  offset:%!s(int64=110) ,topic:mykafka
+
+2020/02/29 14:23:24.792 [D]  send successful ,pid:0  offset:%!s(int64=111) ,topic:mykafka
+
+2020/02/29 14:23:24.799 [D]  send successful ,pid:0  offset:%!s(int64=112) ,topic:mykafka
+
+2020/02/29 14:23:24.816 [D]  send successful ,pid:0  offset:%!s(int64=113) ,topic:mykafka
+
+2020/02/29 14:23:24.820 [D]  send successful ,pid:0  offset:%!s(int64=114) ,topic:mykafka
+
+2020/02/29 14:23:24.826 [D]  send successful ,pid:0  offset:%!s(int64=115) ,topic:mykafka
+
+2020/02/29 14:23:24.836 [D]  send successful ,pid:0  offset:%!s(int64=116) ,topic:mykafka
+
+2020/02/29 14:23:24.840 [D]  send successful ,pid:0  offset:%!s(int64=117) ,topic:mykafka
+
+2020/02/29 14:23:24.844 [D]  send successful ,pid:0  offset:%!s(int64=118) ,topic:mykafka
+
+2020/02/29 14:23:24.851 [D]  send successful ,pid:0  offset:%!s(int64=119) ,topic:mykafka
+
+2020/02/29 14:23:24.862 [D]  send successful ,pid:0  offset:%!s(int64=120) ,topic:mykafka
+
+2020/02/29 14:23:24.871 [D]  send successful ,pid:0  offset:%!s(int64=121) ,topic:mykafka
+
+2020/02/29 14:23:24.882 [D]  send successful ,pid:0  offset:%!s(int64=122) ,topic:mykafka
+
+2020/02/29 14:23:24.891 [D]  send successful ,pid:0  offset:%!s(int64=123) ,topic:mykafka
+
+2020/02/29 14:23:24.899 [D]  send successful ,pid:0  offset:%!s(int64=124) ,topic:mykafka
+
+2020/02/29 14:23:24.907 [D]  send successful ,pid:0  offset:%!s(int64=125) ,topic:mykafka
+
+2020/02/29 14:23:24.913 [D]  send successful ,pid:0  offset:%!s(int64=126) ,topic:mykafka
+
+2020/02/29 14:23:24.917 [D]  send successful ,pid:0  offset:%!s(int64=127) ,topic:mykafka
+
+2020/02/29 14:23:24.920 [D]  send successful ,pid:0  offset:%!s(int64=128) ,topic:mykafka
+
+2020/02/29 14:23:24.926 [D]  send successful ,pid:0  offset:%!s(int64=129) ,topic:mykafka
+
+2020/02/29 14:23:24.932 [D]  send successful ,pid:0  offset:%!s(int64=130) ,topic:mykafka
+
+2020/02/29 14:23:24.937 [D]  send successful ,pid:0  offset:%!s(int64=131) ,topic:mykafka
+
+2020/02/29 14:23:24.942 [D]  send successful ,pid:0  offset:%!s(int64=132) ,topic:mykafka
+
+2020/02/29 14:23:32.499 [D]  send successful ,pid:0  offset:%!s(int64=133) ,topic:mykafka
+
+2020/02/29 14:24:08.458 [D]  send successful ,pid:0  offset:%!s(int64=134) ,topic:mykafka
+
+2020/02/29 14:24:09.726 [D]  send successful ,pid:0  offset:%!s(int64=135) ,topic:mykafka
+
+2020/02/29 14:24:10.735 [D]  send successful ,pid:0  offset:%!s(int64=136) ,topic:mykafka
+
+2020/02/29 14:24:11.495 [D]  send successful ,pid:0  offset:%!s(int64=137) ,topic:mykafka
+
+2020/02/29 14:24:13.016 [D]  send successful ,pid:0  offset:%!s(int64=138) ,topic:mykafka
+
+2020/02/29 14:24:13.520 [D]  send successful ,pid:0  offset:%!s(int64=139) ,topic:mykafka
+
+2020/02/29 14:24:15.031 [D]  send successful ,pid:0  offset:%!s(int64=140) ,topic:mykafka
+
+2020/02/29 14:24:16.795 [D]  send successful ,pid:0  offset:%!s(int64=141) ,topic:mykafka
+
+2020/02/29 14:24:18.558 [D]  send successful ,pid:0  offset:%!s(int64=142) ,topic:mykafka
+
+2020/02/29 14:24:19.314 [D]  send successful ,pid:0  offset:%!s(int64=143) ,topic:mykafka
+
+2020/02/29 14:24:21.086 [D]  send successful ,pid:0  offset:%!s(int64=144) ,topic:mykafka
+
+2020/02/29 14:24:21.595 [D]  send successful ,pid:0  offset:%!s(int64=145) ,topic:mykafka
+
+2020/02/29 14:24:22.856 [D]  send successful ,pid:0  offset:%!s(int64=146) ,topic:mykafka
+
+2020/02/29 14:24:23.870 [D]  send successful ,pid:0  offset:%!s(int64=147) ,topic:mykafka
+
+2020/02/29 14:24:26.899 [D]  send successful ,pid:0  offset:%!s(int64=148) ,topic:mykafka
+
+2020/02/29 14:24:29.172 [D]  send successful ,pid:0  offset:%!s(int64=149) ,topic:mykafka
+
