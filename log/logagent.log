@@ -338,3 +338,7 @@
 2020/03/01 23:37:11.739 [D]  initialize  all successful
 2020/03/01 23:37:11.747 [D]  init kafka successful
 2020/03/01 23:37:11.747 [D]  initialize  all successful
+2020/03/01 23:55:24.146 [D]  initialize successful
+2020/03/01 23:55:24.146 [D]  load conf successful:&{debug ./log/logagent.log 127.0.0.1:2379 ./my.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/03/01 23:55:24.146 [D]  initialize etcd succ
+2020/03/01 23:55:24.146 [D]  init Tail error,err:invalid config for log collect ,conf:[]

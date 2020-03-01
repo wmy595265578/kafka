@@ -24,7 +24,16 @@ func main() {
 	logs.Debug("initialize successful")
 	logs.Debug("load conf successful:%v,", appConfig)
 
-	err = tailf.InitTail(appConfig.collectConf,appConfig.chanSize)
+
+	collectConf,err := initEtcd(appConfig.etcdAddr,appConfig.etcdKey)
+	if err != nil {
+		logs.Error("init etcd failed, err:%v", err)
+		return
+	}
+
+	logs.Debug("initialize etcd succ")
+
+	err = tailf.InitTail(collectConf,appConfig.chanSize)
 	if err != nil {
 		logs.Debug("init Tail error,err:%v", err)
 		return
