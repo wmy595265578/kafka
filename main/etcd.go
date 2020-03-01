@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego/logs"
+	"github.com/coreos/etcd/mvcc/mvccpb"
 	"go.etcd.io/etcd/clientv3"
 	"kafka/tailf"
 	"strings"
@@ -92,5 +93,37 @@ func initEtcdWatcher() {
 }
 
 func wathcKey(key string) {
+
+	cli := etcdClient.client
+
+	for {
+		rch := cli.Watch(context.Background(), key)
+		var collectConf []tailf.CollectConf
+		var getConfSucc = true
+		for wresp := range rch {
+			for _, ev := range wresp.Events {
+				if ev.Type == mvccpb.DELETE {
+					logs.Warn("key[%s] 's config deleted", key)
+					continue
+				}
+
+				if ev.Type == mvccpb.PUT && string(ev.Kv.Key) == key {
+					err := json.Unmarshal(ev.Kv.Value, &collectConf)
+					if err != nil {
+						logs.Error("key [%s], Unmarshal[%s], err:%v ", err)
+						getConfSucc = false
+						continue
+					}
+				}
+				logs.Debug("get config from etcd, %s %q : %q\n", ev.Type, ev.Kv.Key, ev.Kv.Value)
+			}
+			if getConfSucc {
+				logs.Debug("get config from etcd succ, %v", collectConf)
+				tailf.UpdateConfig(collectConf)
+			}
+
+		}
+
+	}
 
 }
