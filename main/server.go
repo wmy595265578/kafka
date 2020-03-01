@@ -1,9 +1,9 @@
 package main
 
 import (
-	"awesomeProject/kafka"
-	"awesomeProject/tailf"
 	"github.com/astaxie/beego/logs"
+	"kafka/kafka"
+	"kafka/tailf"
 	"time"
 )
 

@@ -1,15 +1,18 @@
 package main
 
 import (
-	"awesomeProject/tailf"
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego/config"
+	"kafka/tailf"
 )
 
 type Config struct {
 	logLevel string
 	logPath  string
+
+	etcdAddr string
+	etcdKey  string
 
 	chanSize    int
 	kafka      string
@@ -63,6 +66,17 @@ func loadConf(confType, filename string) (err error) {
 	appConfig.kafka = conf.String("kafka::server_addr")
 	if len(appConfig.kafka) == 0 {
 		err = fmt.Errorf("kafka invalid addr")
+		return
+	}
+    appConfig.etcdAddr = conf.String("etcd::etcd_addr")
+	if len(appConfig.etcdAddr) == 0 {
+		err = fmt.Errorf("invalid etcd addr")
+		return
+	}
+
+	appConfig.etcdKey = conf.String("etcd::etcd_Key")
+	if len(appConfig.etcdKey) == 0 {
+		err = fmt.Errorf("invalid etcd key")
 		return
 	}
 

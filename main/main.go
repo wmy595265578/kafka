@@ -1,10 +1,10 @@
 package main
 
 import (
-	"awesomeProject/kafka"
-	"awesomeProject/tailf"
 	"fmt"
 	"github.com/astaxie/beego/logs"
+	"kafka/kafka"
+	"kafka/tailf"
 )
 
 func main() {

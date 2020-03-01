@@ -324,3 +324,17 @@
 
 2020/02/29 14:24:29.172 [D]  send successful ,pid:0  offset:%!s(int64=149) ,topic:mykafka
 
+2020/03/01 23:34:02.130 [D]  initialize successful
+2020/03/01 23:34:02.130 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/03/01 23:34:02.130 [D]  initialize  all successful
+2020/03/01 23:34:02.888 [D]  init kafka error,err:kafka: client has run out of available brokers to talk to (Is your cluster reachable?)
+2020/03/01 23:34:47.973 [D]  initialize successful
+2020/03/01 23:34:47.973 [D]  load conf successful:&{debug ./log/logagent.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/03/01 23:34:47.973 [D]  initialize  all successful
+2020/03/01 23:34:48.010 [D]  init kafka successful
+2020/03/01 23:34:48.010 [D]  initialize  all successful
+2020/03/01 23:37:11.739 [D]  initialize successful
+2020/03/01 23:37:11.739 [D]  load conf successful:&{debug ./log/logagent.log 127.0.0.1:2379 ./my.log 100 127.0.0.1:9092 [{./my.log mykafka}]},
+2020/03/01 23:37:11.739 [D]  initialize  all successful
+2020/03/01 23:37:11.747 [D]  init kafka successful
+2020/03/01 23:37:11.747 [D]  initialize  all successful
