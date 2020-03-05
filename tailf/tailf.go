@@ -1,7 +1,6 @@
 package tailf
 
 import (
-	"fmt"
 	"github.com/astaxie/beego/logs"
 	"github.com/hpcloud/tail"
 	"sync"
@@ -110,21 +109,24 @@ func createNewTask(conf CollectConf) {
 }
 
 func InitTail(conf []CollectConf, chanSize int) (err error) {
+	tailObjMgr = &TailObjMgr{
+		msgChan: make(chan *TextMsg, chanSize),
+	}
 
 	if len(conf) == 0 {
-		err = fmt.Errorf("invalid config for log collect ,conf:%v", conf)
+		logs.Error("invalid config for log collect ,conf:%v", conf)
 		return
 
 	}
-	for _, v := range conf {
-		createNewTask(v)
-	}
+
+	//for _, v := range conf {
+	//	createNewTask(v)
+	//}
 
 	return
 }
 
 func readFromTail(tailObj *TailObj) {
-
 	for true {
 		select {
 		case line, ok := <-tailObj.tail.Lines:

@@ -5,6 +5,7 @@ import (
 	"github.com/astaxie/beego/logs"
 	"kafka/kafka"
 	"kafka/tailf"
+
 )
 
 func main() {
