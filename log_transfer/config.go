@@ -10,6 +10,7 @@ type LogConfig struct {
 	ESAddr    string
 	LogPath   string
 	LogLevel  string
+	Topic     string
 }
 
 var (
@@ -40,11 +41,17 @@ func initConfig(confType, filename string) (err error) {
 		err = fmt.Errorf("invalid kafkaAddr err")
 		return
 	}
-
+	logConfig.Topic = conf.String("kafka::Topic")
+	if len(logConfig.Topic) == 0 {
+		err = fmt.Errorf("invalid Topic err")
+		return
+	}
 	logConfig.ESAddr = conf.String("es::ESAddr")
 	if len(logConfig.ESAddr) == 0 {
 		err = fmt.Errorf("invalid ESAddr err")
 		return
 	}
+
+
 	return
 }

@@ -19,25 +19,31 @@ func main()  {
 		 return
 	 }
 	 logs.Info("init log success")
-	 /*
-	 err = initKafka()
+
+	 err = initKafka(logConfig.kafkaAddr,logConfig.Topic)
 	 if err !=nil {
 	 	logs.Error("init kafka  failed err:%s",err)
 		 return
 	 }
+	 logs.Debug("init kafka successful")
 
-	 err = initES()
+	 err = initES(logConfig.ESAddr)
 	 if err !=nil {
 		 logs.Error("init ES failed err:%s",err)
 		 return
 	 }
+	logs.Debug("init ES successful")
 
-	 err = run()
-	if err !=nil {
-		logs.Error("init Run failed err:%s",err)
-		return
-	}
-	logs.Warn("warning,log_transfer is exited")
-*/
+         kafkaClient.wg.Add(1)
+		 err = run()
+		if err !=nil {
+			logs.Error("init Run failed err:%s",err)
+			return
+		}
+		kafkaClient.wg.Done()
+		logs.Debug("func run is running")
+		 kafkaClient.wg.Wait()
+		logs.Warn("warning,log_transfer is exited")
+
 }
 

@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	//"encoding/json"
+
+	//"encoding/json"
 	"fmt"
 	"go.etcd.io/etcd/clientv3"
 	"kafka/tailf"
@@ -49,7 +51,7 @@ func SetLogConfToEtcd() {
 		//}
 
 		ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-		cli.Delete(ctx, EtcdKey)
+		//cli.Delete(ctx, EtcdKey)
 		//return
 		//_, err = cli.Put(ctx, EtcdKey, string(data))
 		cancel()
@@ -59,15 +61,15 @@ func SetLogConfToEtcd() {
 		//}
 
 	//ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	//resp, err := cli.Get(ctx, EtcdKey)
+	resp, err := cli.Get(ctx, EtcdKey)
 	//cancel()
-	//if err != nil {
-	//	fmt.Println("get failed, err:", err)
-	//	return
-	//}
-	//for _, ev := range resp.Kvs {
-	//	fmt.Printf("%s : %s\n", ev.Key, ev.Value)
-	//}
+	if err != nil {
+		fmt.Println("get failed, err:", err)
+		return
+	}
+	for _, ev := range resp.Kvs {
+		fmt.Printf("%s : %s\n", ev.Key, ev.Value)
+	}
 }
 
 func main() {
